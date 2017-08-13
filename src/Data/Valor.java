@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Data;
 
 import Modelo.Base;
@@ -39,6 +34,5 @@ public class Valor extends Base{
     @Override
     public Base copy() {
         return new Valor(texto);
-    }
-    
+    }   
 }
