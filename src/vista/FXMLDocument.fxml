@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="398.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.FXMLDocumentController">
+    <children>
+        <Label id="lbNombre" fx:id="lbNombre" layoutX="20.0" layoutY="58.0" minHeight="16" minWidth="69" text="Nombre: " />
+      <Label id="lbId" fx:id="lbId" layoutX="21.0" layoutY="81.0" text="Identificación: " />
+      <Label fx:id="lbEdad" layoutX="21.0" layoutY="104.0" text="Edad:" />
+      <Label fx:id="lbTelefono" layoutX="20.0" layoutY="127.0" text="Telefono:" />
+      <Label fx:id="lbCodigo" layoutX="265.0" layoutY="58.0" text="Codigo:" />
+      <Label fx:id="lbCarrera" layoutX="265.0" layoutY="81.0" text="Carrera:" />
+      <Label fx:id="lbSemestre" layoutX="265.0" layoutY="104.0" text="Semestre:" />
+      <TextField fx:id="txNombre" layoutX="100.0" layoutY="54.0" />
+      <TextField fx:id="txId" layoutX="100.0" layoutY="77.0" />
+      <TextField fx:id="txEdad" layoutX="100.0" layoutY="100.0" />
+      <TextField fx:id="txTelefono" layoutX="100.0" layoutY="123.0" />
+      <TextField fx:id="txCodigo" layoutX="327.0" layoutY="54.0" />
+      <TextField fx:id="txCarrera" layoutX="327.0" layoutY="77.0" />
+      <TextField fx:id="txSemestre" layoutX="327.0" layoutY="100.0" />
+      <MenuBar blendMode="DARKEN">
+        <menus>
+          <Menu mnemonicParsing="false" text="Estudiante">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#AgregarEst" text="Agregar Estudiante" />
+              <MenuItem mnemonicParsing="false" onAction="#MostrarEsts" text="Mostrar Estudiantes" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <WebView fx:id="WebView" layoutX="20.0" layoutY="178.0" prefHeight="200.0" prefWidth="461.0" AnchorPane.bottomAnchor="20.0" />
+    </children>
+</AnchorPane>
